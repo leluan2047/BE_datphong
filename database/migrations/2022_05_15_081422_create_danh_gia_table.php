@@ -13,7 +13,7 @@ class CreateDanhGiaTable extends Migration
      */
     public function up()
     {
-        Schema::create('danhGia', function (Blueprint $table) {
+        Schema::create('danhgia', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('maTK')->unsigned()->nullable(false);
             $table->foreign('maTK')->references('id')->on('users');

@@ -13,7 +13,7 @@ class CreatePhongKhachSanTable extends Migration
      */
     public function up()
     {
-        Schema::create('phongKhachSan', function (Blueprint $table) {
+        Schema::create('phongkhachsan', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('maKS')->unsigned()->nullable(false);
             $table->foreign('maKS')->references('id')->on('khachsan');

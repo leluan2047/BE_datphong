@@ -13,7 +13,7 @@ class CreateDatPhongTable extends Migration
      */
     public function up()
     {
-        Schema::create('datPhong', function (Blueprint $table) {
+        Schema::create('datphong', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('maTK')->unsigned()->nullable(false);
             $table->foreign('maTK')->references('id')->on('users');
