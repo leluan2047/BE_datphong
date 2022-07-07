@@ -150,7 +150,7 @@ class AuthController extends Controller
             $images = new stdClass();     
             $file =  $request->file('anhDaiDien');
 
-            $upload = Cloudinary::upload($file->getRealPath(),array("folder" => "DoAnTotNghiep")); 
+            $upload = Cloudinary::upload($file->getRealPath(),array("folder" =>"DoAnTotNghiep")); 
             $key = $upload->getPublicId();
             $images->$key = $upload->getSecurePath();     
   
