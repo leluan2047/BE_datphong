@@ -24,7 +24,7 @@ class CreateKhachsanTable extends Migration
             $table->json('hinhAnh')->nullable();
             $table->float('chatLuong', 8, 2);
             $table->integer('luotDanhGia')->default(1);
-            $table->string('moTa');
+            $table->longText('moTa');
             $table->timestamps();
         });
     }
