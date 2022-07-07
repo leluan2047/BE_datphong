@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class DichVu extends Model
 {
     use HasFactory;
-    public $table = "DichVu";
+    public $table = "dichvu";
     protected $fillable = [
         'maKS',
         'tenDichVu',
