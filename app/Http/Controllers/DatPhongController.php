@@ -342,7 +342,7 @@ class DatPhongController extends Controller
         $id = $request->all()['id'];
         $hoaDon = DatPhong::find($id);
 
-        $a['trangThai'] = "daThanhToan";
+        $a['trangThai'] = "hoanTat";
         if($hoaDon->update($a)){
             return "thanh toan thanh cong";
         }
