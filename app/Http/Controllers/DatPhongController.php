@@ -292,7 +292,9 @@ class DatPhongController extends Controller
         $amount = $request->all()['tongTien'];
         // $amount = '2000';
         $orderId = time() ."";
-        $redirectUrl = "http://localhost:8000/api/datPhong/thanhToanThanhCong";
+        
+        $redirectUrl = "https://fierce-peak-31965.herokuapp.com/api/datPhong/thanhToanThanhCong";
+        // $redirectUrl = "http://localhost:8000/api/datPhong/thanhToanThanhCong";
         $ipnUrl = "https://webhook.site/b3088a6a-2d17-4f8d-a383-71389a6c600b";
         $extraData = $request->all()['ngayNhan'];;
         
