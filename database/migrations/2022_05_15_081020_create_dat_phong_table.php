@@ -18,7 +18,7 @@ class CreateDatPhongTable extends Migration
             $table->bigInteger('maTK')->unsigned()->nullable(false);
             $table->foreign('maTK')->references('id')->on('users');
             $table->bigInteger('maPhong')->unsigned()->nullable(false);
-            $table->foreign('maPhong')->references('id')->on('phongKhachSan');
+            $table->foreign('maPhong')->references('id')->on('phongkhachsan');
             $table->datetime('ngayNhan');
             $table->datetime('ngayTra');
             $table->integer('tongTien');

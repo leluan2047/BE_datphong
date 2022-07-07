@@ -16,7 +16,7 @@ class CreateNoiThatTable extends Migration
         Schema::create('noithat', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('maPhong')->unsigned()->nullable(false);
-            $table->foreign('maPhong')->references('id')->on('phongKhachSan');
+            $table->foreign('maPhong')->references('id')->on('phongkhachsan');
             $table->string('tenNoiThat');
             $table->json('hinhAnh')->nullable();
             $table->integer('soLuong');
