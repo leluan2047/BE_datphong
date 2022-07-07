@@ -49,7 +49,7 @@ class DatPhongController extends Controller
                                 
         if(!count($danhSachDangXai)){
 
-            // $dptc = DatPhong::create($datPhong);
+            $dptc = DatPhong::create($datPhong);
             
             return "Dat phong thanh cong";
             
